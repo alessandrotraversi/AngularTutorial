@@ -6,23 +6,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tutorial: Tour of Heroes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+The grand plan for this tutorial is to build an app that helps a staffing agency manage its stable of heroes.
 
-## Build
+The Tour of Heroes app covers the core fundamentals of Angular. You'll build a basic app that has many of the features you'd expect to find in a full-blown, data-driven app: acquiring and displaying a list of heroes, editing a selected hero's detail, and navigating among different views of heroic data.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+You'll use built-in directives to show and hide elements and display lists of hero data. You'll create components to display hero details and show an array of heroes. You'll use one-way data binding for read-only data. You'll add editable fields to update a model with two-way data binding. You'll bind component methods to user events, like keystrokes and clicks. You'll enable users to select a hero from a master list and edit that hero in the details view. You'll format data with pipes. You'll create a shared service to assemble the heroes. And you'll use routing to navigate among different views and their components.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+You'll learn enough core Angular to get started and gain confidence that Angular can do whatever you need it to do. You'll cover a lot of ground at an introductory level, and you'll find many links to pages with greater depth.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help https://angular.io/tutorial
