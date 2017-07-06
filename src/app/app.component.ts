@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Hero } from './hero';
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
@@ -23,14 +24,7 @@ const HEROES: Hero[] = [
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
   </ul>
-  <div *ngIf="selectedHero">
-  <h2>{{selectedHero.name}} details!</h2>
-  <div><label>id: </label>{{selectedHero.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
-  </div>
-</div>
+  <hero-detail [hero]="selectedHero"></hero-detail>
   `,
   styles: [`
     .selected {
@@ -93,34 +87,10 @@ export class AppComponent {
   }
 }
 
-export class Hero {
-  id: number;
-  name: string;
-}
-
 /*
 
- ngFor and template input variables
+ Angular module
  ----------------------------------
- https://angular.io/guide/displaying-data#ngFor
- https://angular.io/guide/displaying-data
- https://angular.io/guide/template-syntax#ngFor
- https://angular.io/guide/template-syntax
-
- Event binding, page and binding section
- ---------------------------------------
- https://angular.io/guide/user-input
- https://angular.io/guide/template-syntax#event-binding
- https://angular.io/guide/template-syntax
-
- ngIf and ngFor
- --------------
- https://angular.io/guide/structural-directives
- https://angular.io/guide/template-syntax#directives
- https://angular.io/guide/template-syntax
-
- [class] binding
- --------------
- https://angular.io/guide/template-syntax
+ https://angular.io/guide/ngmodule
 
  */
