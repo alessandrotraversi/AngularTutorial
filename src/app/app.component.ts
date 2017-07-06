@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component }          from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
     <nav>
@@ -10,17 +10,8 @@ import { Component } from '@angular/core';
     </nav>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Tour of Heroes';
 }
-
-/*
-
- Dynamic router links
- ----------------------------------
- https://angular.io/guide/router#link-parameters-array
- https://angular.io/guide/router
-
- */
